@@ -210,7 +210,7 @@ public class ScriptVariableInjectorGUI : EditorWindow
         System.IO.File.WriteAllText(scriptPath, scriptContent);
 
         // 刷新 Unity 以加载修改后的脚本
-        AssetDatabase.Refresh();
+        // AssetDatabase.Refresh();
     }
     // 获取类型所在的命名空间
     private string GetNamespaceForType(string typeName, string[] assemblyStrings)
